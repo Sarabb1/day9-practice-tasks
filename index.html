@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>List of Contents:m</h3>
+        <ul>
+            <li> <a href="#calculator">Calculator</a></li>
+            <li><a href="#todo">To-Do List</a></li>
+            <li><a href="#slide">Image Slider</a></li>
+            <li><a href="#frm">Form</a></li>
+            <li> <a href="#timer">Count Down timer</a></li>
+        </ul>
+    </div>
+
+        <section id="calculator">
+            <h2>Calculator</h2>
+            <div id="box">
+            <p id="Ans"></p>
+            </div>
+            <div id="numbs">
+                <div class="numbItems"><button>C</button></div> 
+               <div class="numbItems"><button>9</button></div>
+               <div class="numbItems"><button>8</button></div>
+               <div class="numbItems"><button>7</button></div>
+               <div class="numbItems"><button>6</button></div>
+               <div class="numbItems"><button>5</button></div>
+               <div class="numbItems"><button>4</button></div>
+               <div class="numbItems"><button>3</button></div>
+               <div class="numbItems"><button>2</button></div>
+               <div class="numbItems"><button>1</button></div>
+               <div class="numbItems"><button>0</button></div>
+               <div class="numbItems"><button>.</button></div>
+               <div class="numbItems"><button>+</button></div>
+               <div class="numbItems"><button>-</button></div>
+               <div class="numbItems"><button>÷</button></div>
+               <div class="numbItems"><button>x</button></div>
+               <div class="numbItems"><button>=</button></div>
+       
+            </div>
+        </section>
+    
+    <section id="todo">
+        <h2> To-Do List</h2> 
+        <label for="todos">Enter Your work</label> <br>
+        <input type="text" name="todo" id="todos">
+        <button id="btn"> Add Work</button>
+        <ul id="todo-list"></ul>
+    </section> 
+    <section id="slide"> 
+        <h2>Image Slider</h2>
+        <img src="" alt="" id="imgs">
+         <button id="back">&lt;</button>
+         <button id="next">&gt;</button>
+         <p id="slider"></p>
+    </section> 
+    <section id="frm">
+        <h2>Form</h2>
+        <form id="userForm">
+            <label for="username">Enter Username</label>
+            <input type="text" name="username" id="username" required>
+            <label for="email">Enter Email</label>
+            <input type="email" name="email" id="email" required>
+            <div id="errorMessages" class="error"></div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="timer">
+        <h2>CountDown Timer</h2>
+        <label for="time">Enter Time (in seconds) </label>
+        <input type="text" id="time"> 
+        <button id="btn1">Set Timer</button> 
+        <button id="btn2">Reset</button>
+        <div id="timer-display"></div>
+     </section> 
+
+        <script src="index.js"></script>
+        <script src="todo.js"></script>
+        <script src="frm.js"></script>
+        <script src="slide.js"></script>
+        <script src="timer.js"></script>
+</body>
+</html>
